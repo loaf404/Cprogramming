@@ -72,4 +72,26 @@ int main(void){
     <h3>소스코드 설명
   </dd>
 </dl>
+      
+- 변수 선언 및 포인터에 주소 저장
+
+```C
+int num1 = 3, num2 = 5;
+int* ptr1 = &num1, * ptr2 = &num2;
+```
+
+- 간접 참조 연산을 이용하여 *ptr1 에 합산된 값을 저장
+
+```C
+*ptr1 = (*ptr1 * 20) + (*ptr2 * 8);
+```
+
+- 주소를 읽은 후 출력
+```C
+printf("%d\n", *ptr1);
+```
+
+# 실행결과
+<img width="799" height="184" alt="image" src="https://github.com/user-attachments/assets/4e301d15-ec23-495c-b892-98a626bc8f5f" />
+
 
