@@ -1,22 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
+#include <stdio.h>
+
 // **********************************************
-// 제  목  :  포인터 활용 기초
+// 제  목  :  포인터
 // 날  짜  :  2026년 9월8일
 // 작성자  :  2600179 조성찬
 // **********************************************
 
-#include <stdio.h>
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning(disable:6031)
-
 int main(void) {
-	/* int num = 10; //char: 1바이트 int: 4바이트 
-	int* p = &num; // &num <- num의 주소
-	printf("%d\n", num); //10 출력 - 직접참조
-	//변수명 접근(직접 참조)
-	//주소로 접근(간접 참조) - 포인터
-	printf("%d\n", *p); //10 출력 - 간접참조  // 10 -> 4번지부터 4바이트만큼 읽음
-	//printf("%d\n", *&num); *(&num) -> *(주소) => 10
-	*p = 20; //p가 가리키는 공간에 20을 대입  // 20 -> 4번지부터 4바이트만큼 읽음
-	printf("%d\n", *p); 
-	return 0; */
+	int num1 = 3, num2 = 5;
+	int* ptr1 = &num1, * ptr2 = &num2;
+
+	*ptr1 = (*ptr1 * 20) + (*ptr2 * 8);
+	printf("%d\n", *ptr1);
+	return 0;
 }
