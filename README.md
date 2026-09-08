@@ -1,4 +1,8 @@
-# Cprogramming
+# 포인터
+- 직접참조
 ```
-test
+int num = 10;
 ```
+- 간접참조
+```
+int* p = &num;
